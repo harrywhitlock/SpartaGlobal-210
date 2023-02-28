@@ -151,7 +151,7 @@ def isprime2(x):
         print('not a number')
         return False
 
-print(isprime2('a'))
+print(isprime2(1))
 
 
 # -------------------------------------------------------------------------------------- #
