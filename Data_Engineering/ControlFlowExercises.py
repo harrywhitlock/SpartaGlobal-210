@@ -120,28 +120,30 @@ print("\nQ4b\n")
 
 number = input('enter number:')
 
-#if number == 0 or number == 1:
-#    print('is not prime')
-#elif number == 2:
-#    print('is prime')
+if int(number) > 100:
+    for i in range(2, int(number)):
+        if int(number) % i == 0:
+            print('is not prime')
+            break
+        else:
+            print('is prime')
+            break
 
-
-for i in range(2, int(number)):
-    if int(number) % i == 0:
-        print('is not prime')
-        break
-    else:
-        print('is prime')
-        break
 while int(number) <= 100:
-   number = input("enter new number")
-   for i in range(2, int(number)):
-       if int(number) % i == 0:
-           print('is not prime')
-           break
-       else:
-           print('is prime')
-           break
+
+    if int(number) == 0 or int(number) == 1:
+        print('is not prime')
+    elif int(number) == 2:
+        print('is prime')
+
+    for i in range(2, int(number)):
+        if int(number) % i == 0:
+            print('is not prime')
+            break
+        else:
+            print('is prime')
+            break
+    number = input("enter new number")
 
 
 
