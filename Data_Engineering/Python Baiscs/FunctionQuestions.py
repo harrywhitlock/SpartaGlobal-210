@@ -25,7 +25,8 @@ print("\nQ1b\n")
 def function2(x, y):
     if x % y == 0 or y % x == 0:
         return True
-    else: return False
+    else:
+        return False
 
 print(function2(2, 3))
 
@@ -60,6 +61,7 @@ def function4(x):
         mystring += str(digit)
     return mystring
 
+
 print(function4('bob'))
 
 print("\nQ2c\n")
@@ -73,8 +75,6 @@ def function5(x):
     id = []
     for i in x:
         id.append(alphabet.index(i))
-
-
 
 
     mystring = ""
